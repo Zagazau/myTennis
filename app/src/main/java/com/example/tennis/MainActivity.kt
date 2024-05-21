@@ -15,7 +15,7 @@ import com.example.tennis.ui.theme.TennisTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.first_page)
         setContent {
             TennisTheme {
                 // A surface container using the 'background' color from the theme
