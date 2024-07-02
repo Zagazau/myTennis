@@ -20,12 +20,6 @@
             android:layout_margin="0dp"
             android:adjustViewBounds="true" />
 
-        <!-- ImageView for back arrow -->
-
-        <!-- ImageView for Logo -->
-
-        <!-- LinearLayout for Sign Up and Sign In buttons -->
-
         <ImageView
             android:id="@+id/back_arrow"
             android:layout_width="40dp"

@@ -19,7 +19,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/fundo"
             tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="-2dp" />
+            tools:layout_editor_absoluteY="-2dp"/>
 
         <ImageView
             android:id="@+id/logo_image"
