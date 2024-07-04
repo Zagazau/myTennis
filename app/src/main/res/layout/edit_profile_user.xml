@@ -7,6 +7,7 @@
     android:padding="16dp"
     android:background="#FFFFFF">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="84dp"
@@ -16,8 +17,8 @@
 
         <ImageView
             android:id="@+id/close_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="27dp"
+            android:layout_height="26dp"
             android:layout_gravity="start"
             android:padding="8dp"
             android:src="@drawable/close_icon" />
@@ -33,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:text="Admin"
+                android:text="Nome do Utilizador"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -57,6 +58,7 @@
             android:src="@drawable/side_menu" />
     </LinearLayout>
 
+    <!-- Título do formulário -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:text="Adicionar Torneio"
+            android:text="Gestão de Perfil"
             android:textColor="#000000"
             android:textSize="23sp" />
 
@@ -80,11 +82,10 @@
             android:layout_marginBottom="8dp"/>
     </LinearLayout>
 
-
+    <!-- Formulário de edição de perfil -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="513dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:padding="16dp">
 
         <LinearLayout
@@ -92,137 +93,120 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Campo Username -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Torneio"
+                android:text="Username"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/tournament_field"
+                android:id="@+id/username_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione o torneio"
+                android:hint="username"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
 
+            <!-- Campo Email -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Piso"
+                android:text="Email"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/start_date_field"
+                android:id="@+id/email_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione um piso"
-                android:inputType="date"
+                android:hint=" email"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
 
-            <!-- Data Vinda Field -->
+            <!-- Campo Nome -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Tipo Torneio"
+                android:text="Nome"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/end_date_field"
+                android:id="@+id/first_name_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione um tipo de torneio"
-                android:inputType="date"
+                android:hint="Nome"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
 
-            <!-- Adicionar Utilizadores Field -->
+            <!-- Campo Apelido -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Adicionar o local"
+                android:text="Apelido"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/add_users_field"
+                android:id="@+id/last_name_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Adiciona o local"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Adiciona a data de inicio "
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-            <EditText
-                android:id="@+id/add_users_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="Adicione a data inicial"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Adiciona a data de fim"
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-            <EditText
-                android:id="@+id/add_users_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="Adicione a data final"
+                android:hint="Apelido"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
         </LinearLayout>
-
     </ScrollView>
 
+    <!-- Botões no fundo da página -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+    </LinearLayout>
+
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/alterar_password_button"
         android:layout_width="183dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:background="@drawable/green_retangle"
         android:padding="12dp"
-        android:text="Adicionar"
+        android:text="Alterar Password"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/guardar_button"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/green_retangle"
+        android:padding="12dp"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
 
 </LinearLayout>

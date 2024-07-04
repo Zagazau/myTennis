@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:text="Admin"
+                android:text="Utilizador"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -41,7 +41,7 @@
                 android:id="@+id/user_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="email@exemplo.com"
+                android:text="utili@exemplo.com"
                 android:textColor="#000000"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:text="Adicionar Torneio"
+            android:text="Adicionar Visita"
             android:textColor="#000000"
             android:textSize="23sp" />
 
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Torneio"
+                android:text="Data da Visita"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione o torneio"
+                android:hint="1111"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Piso"
+                android:text="Hora da Visita"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione um piso"
+                android:hint="23:33"
                 android:inputType="date"
                 android:padding="10dp"
                 android:textColorHint="#999999"
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Tipo Torneio"
+                android:text="Torneio a visitar"
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
@@ -146,69 +146,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
-                android:hint="Selecione um tipo de torneio"
+                android:hint="ROLAND GARROS"
                 android:inputType="date"
                 android:padding="10dp"
                 android:textColorHint="#999999"
                 android:textSize="13sp" />
 
             <!-- Adicionar Utilizadores Field -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Adicionar o local"
-                android:textColor="#000000"
-                android:textSize="13sp" />
 
-            <EditText
-                android:id="@+id/add_users_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="Adiciona o local"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Adiciona a data de inicio "
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-            <EditText
-                android:id="@+id/add_users_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="Adicione a data inicial"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Adiciona a data de fim"
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-            <EditText
-                android:id="@+id/add_users_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="Adicione a data final"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
         </LinearLayout>
 
     </ScrollView>

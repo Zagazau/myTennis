@@ -15,4 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tennis"
 include(":app")
- 
+include(":app:services")
+include(":app:core")
+include(":app:core2")
