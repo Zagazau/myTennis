@@ -1,4 +1,4 @@
-package ipvc.gymbuddy.api.core
+package mytennis.api.core
 
 sealed class RequestResult<out T> {
     data class Success<out T>(val code: Int, val message: String, val data: T) : RequestResult<T>()

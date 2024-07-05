@@ -1,4 +1,4 @@
-/*package ipvc.gymbuddy.api.core
+package mytennis.api.core
 
 import com.google.gson.Gson
 import retrofit2.Response
@@ -23,4 +23,4 @@ class ResponseParser {
             throw Exception("Unsafe object cast from ${obj::class.simpleName} to Success<${T::class.simpleName}>")
         }
     }
-}*/
+}

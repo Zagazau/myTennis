@@ -1,4 +1,4 @@
-/*package ipvc.gymbuddy.api.core
+package mytennis.api.core
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -33,4 +33,4 @@ class TokenStorage {
         if (!this::secureStorage.isInitialized) throw Error("Secure Storage has not been initialized")
         return secureStorage.getString(TOKEN_KEY)
     }
-}*/
+}
