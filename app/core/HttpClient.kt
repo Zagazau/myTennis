@@ -1,16 +1,14 @@
-package ipvc.gymbuddy.api.core
 
-import ipvc.gymbuddy.api.BuildConfig
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
-
+const val API_URL: String = "localhost:8080"
 open class HttpClient<T>(service: Class<T>) {
     companion object {
-        private const val BASE_URL = BuildConfig.API_URL + "/api/"
+        private const val BASE_URL = API_URL + "/api/"
     }
 
     private val client = OkHttpClient.Builder()
