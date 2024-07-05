@@ -158,6 +158,6 @@
         android:id="@+id/logo_image"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/logo" />
 
 </LinearLayout>

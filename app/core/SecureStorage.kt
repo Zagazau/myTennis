@@ -1,4 +1,4 @@
-package ipvc.gymbuddy.api.core
+/*package ipvc.gymbuddy.api.core
 
 import android.content.Context
 import androidx.security.crypto.EncryptedSharedPreferences
@@ -39,4 +39,4 @@ open class SecureStorage(sharedPreferencesName: String, context: Context) {
         val json = gson.toJson(value)
         return sharedPreferences.edit().putString(key, json).commit()
     }
-}
+}*/

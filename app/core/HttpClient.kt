@@ -1,10 +1,4 @@
 
-import okhttp3.OkHttpClient
-import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.awaitResponse
-import retrofit2.converter.gson.GsonConverterFactory
-
 const val API_URL: String = "localhost:8080"
 open class HttpClient<T>(service: Class<T>) {
     companion object {
@@ -37,4 +31,4 @@ open class HttpClient<T>(service: Class<T>) {
                 mapOf())
         }
     }
-}
+} */

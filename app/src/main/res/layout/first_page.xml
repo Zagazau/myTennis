@@ -25,7 +25,7 @@
             android:id="@+id/logo_image"
             android:layout_width="228dp"
             android:layout_height="53dp"
-            android:src="@drawable/Logo"
+            android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.797"

@@ -177,35 +177,35 @@
                 android:textColor="#000000"
                 android:textSize="13sp" />
 
-            <EditText
-                android:id="@+id/start_date_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="23/05"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
+            <!--   <EditText
+                  android:id="@+id/start_date_field"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="16dp"
+                  android:background="@drawable/rectangle_border"
+                  android:hint="23/05"
+                  android:padding="10dp"
+                  android:textColorHint="#999999"
+                  android:textSize="13sp" /> -->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Data final"
-                android:textColor="#000000"
-                android:textSize="13sp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="8dp"
+                  android:text="Data final"
+                  android:textColor="#000000"
+                  android:textSize="13sp" />
 
-            <EditText
-                android:id="@+id/end_date_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rectangle_border"
-                android:hint="30/05"
-                android:padding="10dp"
-                android:textColorHint="#999999"
-                android:textSize="13sp" />
+              <!--   <EditText
+                  android:id="@+id/end_date_field"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="16dp"
+                  android:background="@drawable/rectangle_border"
+                  android:hint="30/05"
+                  android:padding="10dp"
+                  android:textColorHint="#999999"
+                  android:textSize="13sp" /> -->
 
             <TextView
                 android:id="@+id/consult_games"
@@ -214,8 +214,8 @@
                 android:layout_marginTop="16dp"
                 android:text="Consultar jogos"
                 android:textColor="#0000FF"
-                android:textSize="16sp"
-                android:paintFlags="underline" />
+                android:textSize="16sp" />
+             <!--   android:paintFlags="underline" -->
         </LinearLayout>
     </ScrollView>
 
