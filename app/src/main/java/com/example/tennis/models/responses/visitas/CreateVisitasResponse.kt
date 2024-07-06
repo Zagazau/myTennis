@@ -1,4 +1,6 @@
-data class Visita(
+package com.example.tennis.models.responses.visitas
+
+data class CreateVisitaResponse(
     val id: String,
     val user_id: String,
     val torneio_id: String,

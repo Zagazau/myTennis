@@ -1,5 +1,5 @@
 package requests.role
 
-data class findRoleRequest (
-    var id: String
+data class FindRoleRequest(
+    val id: String
 )
