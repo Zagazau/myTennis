@@ -1,47 +1,69 @@
-package com.example.tennis
-
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.tennis.ui.theme.TennisTheme
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mytennis.TorneioAdapter
+import com.example.tennis.services.TorneioService
+import kotlinx.coroutines.*
+import missing.namespace.databinding.ActivityMainBinding
+import mytennis.api.core.RequestResult
+import responses.torneios.GetAllTorneiosResponse
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var torneioService: TorneioService
+    private lateinit var adapter: TorneioAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.first_page)
-        setContent {
-            TennisTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Configurar RecyclerView
+        adapter = TorneioAdapter(emptyList())
+        binding.recyclerViewTorneios.layoutManager = LinearLayoutManager(this)
+        binding.recyclerViewTorneios.adapter = adapter
+
+        // Configurar Retrofit
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://api.seuservico.com/") // URL base do seu serviço
+            .addConverterFactory(GsonConverterFactory.create()) // Converter factory para Gson
+            .build()
+
+        torneioService = retrofit.create(TorneioService::class.java)
+
+        // Chamar o serviço para obter torneios
+        CoroutineScope(Dispatchers.Main).launch {
+            try {
+                val result = getTorneios()
+
+                if (result is RequestResult.Success) {
+                    adapter.updateTorneios(result.data.torneios)
+                } else if (result is RequestResult.Error) {
+                    // Tratar erro
+                    println("Erro na requisição: ${result.message}")
                 }
+            } catch (e: Exception) {
+                // Tratar exceções
+                println("Erro ao executar requisição: ${e.message}")
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    private suspend fun getTorneios(): RequestResult<GetAllTorneiosResponse> {
+        var map: Map<String, String> = emptyMap();
+        return try {
+            val response = torneioService.getTorneios()
+            return response;
+        } catch (e: Exception) {
+            RequestResult.Error(
+                code = 400,
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TennisTheme {
-        Greeting("Android")
+                message = "Erro ao executar requisição: ${e.message}",
+                errors = map)
+        }
     }
 }
