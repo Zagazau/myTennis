@@ -162,7 +162,7 @@
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/add_users_field"
+                android:id="@+id/add_users_field_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -181,7 +181,7 @@
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/add_users_field"
+                android:id="@+id/add_users_field_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -200,7 +200,7 @@
                 android:textSize="13sp" />
 
             <EditText
-                android:id="@+id/add_users_field"
+                android:id="@+id/add_users_field_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"

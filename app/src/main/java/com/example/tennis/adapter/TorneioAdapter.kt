@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import missing.namespace.R
 
 class TorneioAdapter(private var torneios: List<Torneio>) : RecyclerView.Adapter<TorneioAdapter.TorneioViewHolder>() {
 

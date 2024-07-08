@@ -1,4 +1,4 @@
-package com.example.tennis
+package com.example.mytennis
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
